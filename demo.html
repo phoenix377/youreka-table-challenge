@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="module" src="demo.js"></script>
+    <script type="module" src="modal.js"></script>
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+    <link rel="stylesheet" type="text/css" href="modal.css" />
+  </head>
+  <body>
+    <main>
+      <input id="searchInput" type="text" placeholder="Search" />
+      <table id="salesTable">
+        <tbody>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Annual Revenue</th>
+          <th>Website</th>
+          <th>Account Number</th>
+          <th>Rating</th>
+          <th>UpsellOpportunity__c</th>
+          <th>Contacts</th>
+        </tbody>
+      </table>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Contacts</h2>
+          </div>
+          <div class="modal-body">
+            <table id="contactsTable">
+              <th>Id</th>
+              <th>Name</th>
+              <th>Title</th>
+              <th>Phone</th>
+              <th>Department</th>
+              <th>Email</th>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
