@@ -1,5 +1,6 @@
 import { IRecord } from "@types";
 import React from "react";
+import styled from "styled-components";
 import { useSort } from "../../hooks";
 import { ContactsButton } from "../buttons";
 import { Table } from "./Table";
@@ -22,9 +23,9 @@ export const SalesTable = ({
       <tbody>
         <tr>
           {headers.map(({ label, value }) => (
-            <th key={value} onClick={() => requestSort(value)}>
+            <TableHeader key={value} onClick={() => requestSort(value)}>
               {label}
-            </th>
+            </TableHeader>
           ))}
         </tr>
 
@@ -55,3 +56,7 @@ export const SalesTable = ({
     </Table>
   );
 };
+
+const TableHeader = styled.th`
+  text-align: left;
+`;
