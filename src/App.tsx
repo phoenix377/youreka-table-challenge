@@ -19,7 +19,7 @@ function App() {
             value
               ?.toString()
               .toLocaleLowerCase()
-              .includes(search ?? "")
+              .includes(search?.toLocaleLowerCase() ?? "")
           )
           .some(Boolean);
       });
